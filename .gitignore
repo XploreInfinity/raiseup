@@ -1,2 +1,4 @@
-.idea
-*.pyc
+build
+raiseup.egg-info
+dist
+*/__pycache__

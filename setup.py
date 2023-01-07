@@ -1,13 +1,24 @@
-from distutils.core import setup
+import setuptools
 
-setup(
-    name='elevate',
-    version='0.1.3',
-    author='Barney Gale',
-    author_email='barney.gale@gmail.com',
-    url='https://github.com/barneygale/elevate',
+setuptools.setup(
+    name='raiseup',
+    version='0.2',
+    author='Barney Gale and XploreInfinity',
+    url='https://github.com/XploreInfinity/raiseup',
     license='MIT',
     description='Python library for requesting root privileges',
-    long_description=open('README.rst').read(),
-    packages=["elevate"],
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
+    packages=["raiseup"],
+    project_urls={
+        "Bug Tracker": "https://github.com/XploreInfinity/raiseup/issues",
+    },
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: POSIX :: Linux",
+        "Operating System :: Microsoft :: Windows",
+        "Operating System :: MacOS :: MacOS X",
+        "Operating System :: POSIX :: BSD :: FreeBSD",
+    ],
 )
